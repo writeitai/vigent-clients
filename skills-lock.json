@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "business-ops": {
+      "source": "writeitai/autoboard",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "new-project-bootstrap/skills/business-ops/SKILL.md",
+      "computedHash": "dd1a9dbdb872ad5b65a62bc640c2ee4ba0d5a1103cb3b51b45d108bc814e31b2"
+    },
+    "design-corpus": {
+      "source": "writeitai/autoboard",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "new-project-bootstrap/skills/design-corpus/SKILL.md",
+      "computedHash": "4ca44f57db3982b17ee46fabf72846c996b67ea5f00c6c5a0edfe7c9754f22dc"
+    },
+    "infra-inventory": {
+      "source": "writeitai/autoboard",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "new-project-bootstrap/skills/infra-inventory/SKILL.md",
+      "computedHash": "1835d976b7c73aec21e557d9819c70f88f489ae6bff266e14ca940a4cce9144f"
+    },
+    "product-checklists": {
+      "source": "writeitai/autoboard",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "new-project-bootstrap/skills/product-checklists/SKILL.md",
+      "computedHash": "9d62ea113501b9854b0f62ff461b07b569ee1c2afad2b62fccda785bef6abdd2"
+    },
+    "public-writing": {
+      "source": "writeitai/autoboard",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "new-project-bootstrap/skills/public-writing/SKILL.md",
+      "computedHash": "fdba79cc20cd07ae90a6904a405764f95307f0cffa9981bb14b45bf768f95e35"
+    },
+    "why-we-are-best": {
+      "source": "writeitai/autoboard",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "new-project-bootstrap/skills/why-we-are-best/SKILL.md",
+      "computedHash": "5b6b3806b92cda6b50007e1be94754666c181e6e75c1c4d9bfa4b6b312fb77c9"
+    }
+  }
+}
