@@ -20,7 +20,7 @@
       "ref": "main",
       "sourceType": "github",
       "skillPath": "new-project-bootstrap/skills/infra-inventory/SKILL.md",
-      "computedHash": "0fd39ee1a1532009c79d4caa9d812a20603ca86cb5d30f21fb0a66532739cb95"
+      "computedHash": "1835d976b7c73aec21e557d9819c70f88f489ae6bff266e14ca940a4cce9144f"
     },
     "product-checklists": {
       "source": "writeitai/autoboard",

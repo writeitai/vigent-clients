@@ -19,7 +19,9 @@ released by this initial setup.
 
 Changes go through pull requests. Keep protocol-specific logic here and keep
 hosted credentials and private source data out of Git. Follow AGENTS.md and the
-installed project skills. Refresh the shared skills with:
+installed project skills. The shared-skill refresh is maintainer-only and needs
+authorized access to the private Autoboard source; ordinary client users will
+not need that access. Maintainers refresh with:
 
     make install_project_skills
 

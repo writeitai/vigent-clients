@@ -47,25 +47,20 @@ when developing the product and setting up standards. The installed
 `product-checklists` skill explains how to use them and record each check's
 status in the Autoboard board with the `autoboard checklists` CLI.
 
-## Infrastructure inventory
+## Public repository boundary
 
-**Keeping `infra/` accurate is a first-class duty**, not optional cleanup.
-Follow the installed `infra-inventory` skill whenever real infrastructure, its
-identifiers, or live service verifications change. Read `infra/prod.yaml` before
-probing live services and trust recorded verifications unless your task modifies
-that component, its requirements changed, a live failure contradicts it, or the
-owner requests a fresh verification. When you verify a live service or
-capability, write the verification down in `infra/prod.yaml` so later agents do
-not re-probe it, and keep `infra/prod.yaml` strictly current-state (move
-one-time historical events to `infra/history.md`).
+This is the public client repository, not the hosted product. Never put private
+production inventory, infrastructure identifiers, internal costs/accounting,
+signed agreements, customer records, credentials or private corpus data here.
+The private writeitai/LegalIt repository owns infra/, business_ops/ops/, hosted
+resources, commercial operations and verified service capabilities. Make changes
+there when an authorized task needs them. Public documentation may link the
+product website and public API behavior without copying private operational data.
 
-## Business operations
-
-Follow the installed `business-ops` skill when tracking internal recurring
-costs, vendor free-tier limits, accounting notes, signed DPAs/agreements, or
-monthly margin checks under `business_ops/ops/`, and when evaluating, planning,
-executing, or reconciling growth channels under `business_ops/growth_channels/`,
-and when mapping competition under `business_ops/competition/`.
+The installed infra-inventory and business-ops skills remain available to
+maintainers for their work in the private product repository; they do not change
+this public boundary. Competitive claims belong to the product's approved public
+copy and must not be invented here.
 
 ## Why we are the best
 
@@ -74,9 +69,9 @@ Follow the installed `why-we-are-best` skill for
 competition, set by the owner) and
 `business_ops/why_we_are_the_fucking_best_verified.md` (measured or verified
 claims we publish). Write both as selling points, not legal copy: punchy,
-true and briefly proven. Public copy may state only verified claims. After either
-file changes on `main`, publish both to the Autoboard console with
-`autoboard why-best publish`.
+true and briefly proven. Public copy may state only verified claims. Those files
+live in the private product repository, not in this client repo.
+Product maintainers publish their mirrored state from that repository after merge.
 
 ## Public writing
 
@@ -105,14 +100,14 @@ GitHub-hosted runners only. The pool needs no per-repository registration
 Deploy credentials are federation restricted to `main` or a protected
 environment, never long-lived secrets, and jobs are shared-Docker safe.
 
-## Stack
+## Client stack and checks
 
-- Frontend projects use Next.js.
-- Backend projects use Python managed with uv, formatted and linted with ruff,
-  and type-checked with Pyright. The rules live in `pyproject.toml` and follow
-  ultimate-memory-cloud's. Before opening a pull request, run
-  `uv run ruff format --check . && uv run ruff check . && uv run pyright`
-  in the backend project directory.
+The agreed client scope is CLI, MCP and SDKs for Python and TypeScript. No
+Next.js frontend or hosted backend belongs here. Implementations and package
+scaffolding are future work. When Python code is added, use uv, ruff and Pyright;
+TypeScript clients use the checked-in package manager/lockfile and documented
+build/type checks. Add concrete validation commands with the implementations,
+not placeholder commands for nonexistent projects.
 
 ## GCP cost constraint
 

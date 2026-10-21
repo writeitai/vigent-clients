@@ -114,8 +114,8 @@ env: prod
 gcp:
   project_id: example-io
   project_number: "123456789012"
-  organization: writeit.ai (247821698340)
-  billing_account: 01A9D3-D4439B-C0D9F3
+  organization: Example organization (000000000000)
+  billing_account: 000000-000000-000000
   status: live
   created: 2026-09-29
 github:
